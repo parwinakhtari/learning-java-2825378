@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class helloworld {
+
+    public static void main(String args[]) {
+        String question = "How many hours are present in a day in India?";
+        String choiceOne = "12";
+        String choiceTwo = "24";
+        String choiceThree = "23";
+
+        String correctAnswer = choiceTwo;
+
+        // Write a print statement asking the question
+        System.out.println(question);
+        // Write a print statement giving the answer choices
+        System.out.println("Options are");
+        System.out.println(choiceOne);
+        System.out.println(choiceTwo);
+        System.out.println(choiceThree);
+
+        // Have the user input an answer
+        Scanner input=new Scanner(System.in);
+        // Retrieve the user's input
+        String ans=input.nextLine();
+
+        // If the user's input matches the correctAnswer...
+        // then the user is correct and we want to print out a congrats message to the user.
+        if(ans.equals(choiceTwo)) System.out.println("Congratulations! you said the right ans.");
+
+        // If the user's input does not match the correctAnswer...
+        // then the user is incorrect and we want to print out a message saying that the user is incorrect as well as what the correct choice was.
+        else{
+            System.out.println("Oops!incorrect answer");
+            System.out.println("Correct answer is"+" "+choiceTwo);
+        }
+    }
+
+}
