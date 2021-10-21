@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class helloworld {
+
+    public static double scalc( double hoursperweek,double amountperhour){
+return hoursperweek*amountperhour;
+    }
+
+    public static void main(String[] args) {
+            Scanner input=new Scanner(System.in);
+            System.out.println("enter hours per week you work");
+            double i1=input.nextDouble();
+            System.out.println("enter amount per hour you get");
+            double i2=input.nextDouble();
+            System.out.println("Your Salary is " + scalc(i1,i2));
+        }
+    
+    
+}
